@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Core Docker image
-      run: docker build . --file Dockerfile --build-args VERSION=core --tag kali-docker-core:$(date +%s)
+      run: docker build . --file Dockerfile --build-arg VERSION=core --tag kali-docker-core:$(date +%s)
